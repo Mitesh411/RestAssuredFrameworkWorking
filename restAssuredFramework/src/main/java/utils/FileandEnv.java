@@ -47,4 +47,15 @@ public class FileandEnv {
 		return fileandenv;
 		
 	}
+	
+	public static Map<String, String> getConfigReader(){
+		if (fileandenv == null) {
+			fileandenv = envAndFile();
+			
+		}
+		
+		return fileandenv;
+		
+	}
+	
 }
