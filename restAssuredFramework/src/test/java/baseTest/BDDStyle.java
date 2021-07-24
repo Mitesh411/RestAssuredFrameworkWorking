@@ -2,6 +2,7 @@ package baseTest;
 
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
+import org.hamcrest.Matchers;
 
 public class BDDStyle {
 	
@@ -21,7 +22,7 @@ public class BDDStyle {
 	    .log()
 	    .all();
 	    //To Verify booking count
-	    //.body("bookingid", hasSize(10));
+	   // .body("bookingid", hasSize(10));
 		// To verify booking id at index 3
 		//.body("bookingid[3]", equalTo(1));
 	    
