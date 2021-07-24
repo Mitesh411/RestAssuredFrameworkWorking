@@ -1,7 +1,5 @@
 package baseTest;
 
-import org.hamcrest.Matchers;
-
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -47,13 +45,13 @@ validatbleresponse.statusCode(200);
 //Validate token field is null
 		// SInce response is one to one mapping so passing key name will give you value.
 		// Below method validates that value of token is not null.
-		validatableResponse.body("token", Matchers.notNullValue());
+	//	validatableResponse.body("token", Matchers.notNullValue());
 		
 		// Validate token length is 15
-		validatableResponse.body("token.length()", Matchers.is(15));
+	//	validatableResponse.body("token.length()", Matchers.is(15));
 		
 		// Validate token is an alphanumeric value
-		validatableResponse.body("token", Matchers.matchesRegex("^[a-z0-9]+$"));
+//		validatableResponse.body("token", Matchers.matchesRegex("^[a-z0-9]+$"));
 		
 		
 	}
