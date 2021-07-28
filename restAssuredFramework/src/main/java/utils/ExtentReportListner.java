@@ -47,24 +47,24 @@ public class ExtentReportListner implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 
-		test = reports.startTest(result.getMethod().getMethodName());
-		test.log(LogStatus.INFO, result.getMethod().getMethodName());
+//		test = reports.startTest(result.getMethod().getMethodName());
+//		test.log(LogStatus.INFO, result.getMethod().getMethodName());
 		System.out.println(result.getTestClass().getTestName());
 		System.out.println(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		test.log(LogStatus.PASS, "Test is pass");
+//		test.log(LogStatus.PASS, "Test is pass");
 
 	}
 
 	public void onTestFailure(ITestResult result) {
-		test.log(LogStatus.FAIL, "Test is fail");
+//		test.log(LogStatus.FAIL, "Test is fail");
 
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		test.log(LogStatus.SKIP, "Test is skipped");
+//		test.log(LogStatus.SKIP, "Test is skipped");
 
 	}
 
@@ -75,13 +75,13 @@ public class ExtentReportListner implements ITestListener {
 
 	public void onStart(ITestContext context) {
 		System.out.println(ReportLocation + "  ReportLocation");
-		reports = new ExtentReports(ReportLocation + "ExtentReport.html");
-		test = reports.startTest("");
+//		reports = new ExtentReports(ReportLocation + "ExtentReport.html");
+//		test = reports.startTest("");
 
 	}
 
 	public void onFinish(ITestContext context) {
-		reports.endTest(test);
+//		reports.endTest(test);
 		reports.flush();
 
 	}

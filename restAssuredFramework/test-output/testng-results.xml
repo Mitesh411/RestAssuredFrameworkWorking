@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4002" started-at="2021-07-22T08:17:06 IST" finished-at="2021-07-22T08:17:10 IST">
+  <suite name="Default suite" duration-ms="879" started-at="2021-07-28T07:49:54 IST" finished-at="2021-07-28T07:49:55 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4002" started-at="2021-07-22T08:17:06 IST" finished-at="2021-07-22T08:17:10 IST">
-      <class name="baseTest.BDDStyle">
-        <test-method status="PASS" signature="GetBookingIds_VerifyStatusCode()[pri:0, instance:baseTest.BDDStyle@59e5ddf]" name="GetBookingIds_VerifyStatusCode" duration-ms="3937" started-at="2021-07-22T08:17:06 IST" finished-at="2021-07-22T08:17:10 IST">
+    <test name="Default test" duration-ms="879" started-at="2021-07-28T07:49:54 IST" finished-at="2021-07-28T07:49:55 IST">
+      <class name="baseTest.CommonRequestSpecification">
+        <test-method status="PASS" signature="setupRequestSpecification()[pri:0, instance:baseTest.CommonRequestSpecification@57e1b0c]" name="setupRequestSpecification" is-config="true" duration-ms="645" started-at="2021-07-28T07:49:54 IST" finished-at="2021-07-28T07:49:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetBookingIds_VerifyStatusCode -->
-      </class> <!-- baseTest.BDDStyle -->
+        </test-method> <!-- setupRequestSpecification -->
+        <test-method status="PASS" signature="getAllBookings()[pri:0, instance:baseTest.CommonRequestSpecification@57e1b0c]" name="getAllBookings" duration-ms="138" started-at="2021-07-28T07:49:55 IST" finished-at="2021-07-28T07:49:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBookings -->
+        <test-method status="PASS" signature="getBoookingDetailswithInvalidFirstName()[pri:0, instance:baseTest.CommonRequestSpecification@57e1b0c]" name="getBoookingDetailswithInvalidFirstName" duration-ms="36" started-at="2021-07-28T07:49:55 IST" finished-at="2021-07-28T07:49:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBoookingDetailswithInvalidFirstName -->
+      </class> <!-- baseTest.CommonRequestSpecification -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
