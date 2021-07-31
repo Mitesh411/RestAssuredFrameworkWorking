@@ -5,7 +5,7 @@
     <classes>
       <class name="baseTest.BDDStyle">
         <methods>
-          <include name="GetBookingIds_VerifyStatusCode"/>
+          <include name="measureResponseTimeUsingOptionsMethods"/>
         </methods>
       </class> <!-- baseTest.BDDStyle -->
     </classes>
